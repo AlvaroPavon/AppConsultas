@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.azrael.consultasbd.appconsultas.ModificarConsultaController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <spacing>10</spacing>
+
+    <TextArea fx:id="consultaInputGrande" wrapText="true" VBox.vgrow="ALWAYS"/>
+    <Button text="Guardar Cambios" fx:id="guardarCambiosButton"/>
+</VBox>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="grid" xmlns:fx="http://javafx.com/fxml" fx:controller="com.azrael.consultasbd.appconsultas.ConsultaController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <vgap>8</vgap>
+    <hgap>10</hgap>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50"/>
+        <ColumnConstraints percentWidth="50"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+    </rowConstraints>
+
+    <Label text="Host:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="hostInput" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Puerto:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="portInput" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Base de datos:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="databaseInput" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Usuario:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="usuarioInput" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Contraseña:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="passwordInput" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Consulta SQL:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <TextArea fx:id="consultaInput" GridPane.rowIndex="5" GridPane.columnIndex="1" wrapText="true"/>
+
+    <Button text="Ver y Modificar Consulta" fx:id="verModificarButton" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+    <Label text="Nombre del archivo:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <TextField fx:id="archivoInput" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+    <Button text="Ejecutar" fx:id="ejecutarButton" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+    <Button text="Guardar" fx:id="guardarButton" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+    <Button text="Seleccionar Configuración" fx:id="seleccionarButton" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+    <ComboBox fx:id="configuracionComboBox" GridPane.rowIndex="9" GridPane.columnIndex="1"/>
+
+</GridPane>
